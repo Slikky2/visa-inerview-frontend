@@ -1,0 +1,124 @@
+/* Import a clean font (Roboto as per fdossena.com suggestion) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f7fa; /* Light blue-gray background for a professional feel */
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #0056b3; /* Embassy blue */
+  font-weight: 700;
+}
+
+p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Chat window styling */
+.chat-window {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  height: 300px;
+  overflow-y: scroll;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-window p {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.chat-window p strong {
+  color: #0056b3;
+}
+
+/* User messages on right, agent on left */
+.chat-window p.user {
+  background: #e6f2ff;
+  text-align: right;
+}
+
+.chat-window p.agent {
+  background: #f0f0f0;
+}
+
+/* Button styling: Responsive, animated (inspired by fdossena.com, arounda.agency, cleanbuttons.com, heyjoshlee.medium.com, html-buttons.com) */
+button {
+  background-color: #0056b3; /* Primary blue */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease; /* Smooth hover animation */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+button:hover {
+  background-color: #004494; /* Darker blue on hover */
+  transform: translateY(-2px); /* Lift effect from arounda.agency */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Specific button classes for variety */
+.start-button {
+  background-color: #28a745; /* Green for "start" */
+  font-size: 18px;
+  padding: 15px 30px;
+  display: block;
+  margin: 20px auto;
+}
+
+.start-button:hover {
+  background-color: #218838;
+}
+
+.restart-button {
+  background-color: #ffc107; /* Yellow for restart */
+}
+
+.restart-button:hover {
+  background-color: #e0a800;
+}
+
+/* Input styling */
+input {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 300px;
+  max-width: 100%;
+}
+
+/* Decision box */
+.decision-box {
+  background: #fff;
+  border: 2px solid #0056b3;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
