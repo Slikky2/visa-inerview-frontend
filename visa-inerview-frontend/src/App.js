@@ -9,7 +9,7 @@ const socket = io('http://localhost:3001'); // Change to your deployed backend U
 function App() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
-  const [isListening, setIsListening] = useState(false);
+  const [isListening] = useState(false);
   const [voiceEnabled, setVoiceEnabled] = useState(true);
   const [interviewEnded, setInterviewEnded] = useState(false);
   const [finalDecision, setFinalDecision] = useState('');
