@@ -4,7 +4,7 @@ import './App.css'; // NEW: Import the CSS file
 import { speak, startListening, stopListening, sendMessage } from './voiceUtils';
 
 
-const socket = io('http://localhost:3001'); // Change to your deployed backend URL
+const socket = io('https://visa-inerview-backend.onrender.com/'); // Change to your deployed backend URL
 
 function App() {
   const [messages, setMessages] = useState([]);
