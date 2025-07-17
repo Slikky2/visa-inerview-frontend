@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import io from 'socket.io-client';
 import './App.css'; // NEW: Import the CSS file
+import { speak, startListening, stopListening, sendMessage } from './voiceUtils';
+
 
 const socket = io('http://localhost:3001'); // Change to your deployed backend URL
 
