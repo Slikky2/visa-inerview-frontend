@@ -18,6 +18,13 @@ function App() {
 
   // ... (The rest of the useEffect for SpeechRecognition remains unchanged)
 
+  useEffect(() => {
+  if (recognitionRef.current) {
+    // recognitionRef will be used here in the future
+  }
+}, []);
+
+
   // Handle incoming messages and interview end
   useEffect(() => {
     socket.on('message', (msg) => {
